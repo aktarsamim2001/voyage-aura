@@ -34,10 +34,10 @@ const WhyChooseUs = () => {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <span className="text-accent font-heading font-semibold text-sm uppercase tracking-widest">
-            Why Wanderlux
+          <span className="text-accent font-heading font-medium text-sm uppercase tracking-wider">
+            Why Dream Travels
           </span>
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mt-2">
+          <h2 className="font-heading font-semibold text-3xl md:text-4xl text-foreground mt-2">
             Why Choose Us
           </h2>
           <p className="text-muted-foreground mt-3 max-w-lg mx-auto">
@@ -58,7 +58,7 @@ const WhyChooseUs = () => {
               <div className="w-14 h-14 rounded-xl bg-primary-light mx-auto flex items-center justify-center mb-5 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
                 <feature.icon className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
               </div>
-              <h3 className="font-heading font-semibold text-lg text-foreground mb-2">
+              <h3 className="font-heading font-medium text-lg text-foreground mb-2">
                 {feature.title}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">

@@ -16,10 +16,10 @@ const PopularTours = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <span className="text-accent font-heading font-semibold text-sm uppercase tracking-widest">
+          <span className="text-accent font-heading font-medium text-sm uppercase tracking-wider">
             Top Destinations
           </span>
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mt-2">
+          <h2 className="font-heading font-semibold text-3xl md:text-4xl text-foreground mt-2">
             Popular Tour Packages
           </h2>
           <p className="text-muted-foreground mt-3 max-w-lg mx-auto">
@@ -65,7 +65,7 @@ const PopularTours = () => {
                     </span>
                   </div>
 
-                  <h3 className="font-heading font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
+                  <h3 className="font-heading font-medium text-lg text-foreground group-hover:text-primary transition-colors">
                     {tour.title}
                   </h3>
 
