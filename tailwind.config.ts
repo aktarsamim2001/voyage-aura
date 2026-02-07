@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["Poppins", "sans-serif"],
-        body: ["Inter", "sans-serif"],
+        heading: ["Rubik", "sans-serif"],
+        body: ["Noto Sans", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
