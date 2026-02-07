@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 import tourBali from "@/assets/tour-bali.jpg";
 import tourSwitzerland from "@/assets/tour-switzerland.jpg";
@@ -41,6 +42,10 @@ const Gallery = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Photo Gallery"
+        description="Explore stunning photos from Dream Travels destinations — beaches, mountains, cities & more. Get inspired for your next adventure."
+      />
       <section className="pt-28 pb-12 bg-gradient-primary">
         <div className="container mx-auto px-4 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>

@@ -14,6 +14,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { tours } from "@/data/tours";
 import { useState } from "react";
 
@@ -25,6 +26,7 @@ const TourDetail = () => {
   if (!tour) {
     return (
       <Layout>
+        <SEO title="Tour Not Found" description="The tour you're looking for doesn't exist." noIndex />
         <div className="pt-28 pb-20 text-center container mx-auto px-4">
           <h1 className="font-heading font-bold text-3xl text-foreground mb-4">Tour Not Found</h1>
           <p className="text-muted-foreground mb-6">The tour you're looking for doesn't exist.</p>
@@ -38,6 +40,12 @@ const TourDetail = () => {
 
   return (
     <Layout>
+      <SEO
+        title={`${tour.title} - ${tour.location}`}
+        description={`${tour.duration} tour in ${tour.location} from $${tour.price}/person. ${tour.description.slice(0, 120)}...`}
+        ogImage={tour.image}
+        ogType="product"
+      />
       {/* Hero */}
       <section className="relative h-[50vh] md:h-[60vh]">
         <img src={tour.image} alt={tour.title} className="w-full h-full object-cover" />
