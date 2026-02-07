@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import logo from "@/assets/logo.jpeg";
 
 const Footer = () => {
   return (
@@ -9,10 +10,11 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-lg bg-accent flex items-center justify-center">
-                <span className="text-accent-foreground font-heading font-bold text-lg">W</span>
+              <img src={logo} alt="Dream Travels Logo" className="w-10 h-10 rounded-lg object-contain" />
+              <div className="flex flex-col leading-tight">
+                <span className="font-heading font-bold text-xl">Dream Travels</span>
+                <span className="text-primary-foreground/50 text-xs">Live Your Dream</span>
               </div>
-              <span className="font-heading font-bold text-xl">Wanderlux</span>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
               Creating unforgettable travel experiences since 2010. Your trusted partner for
@@ -99,7 +101,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/50 text-sm">
-            © {new Date().getFullYear()} Wanderlux Tours. All rights reserved.
+            © {new Date().getFullYear()} Dream Travels. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-primary-foreground/50 hover:text-accent text-sm transition-colors">

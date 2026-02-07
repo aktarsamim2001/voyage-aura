@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/logo.jpeg";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -39,16 +40,23 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-9 h-9 rounded-lg bg-gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold text-lg">W</span>
+            <img src={logo} alt="Dream Travels Logo" className="w-10 h-10 rounded-lg object-contain" />
+            <div className="flex flex-col leading-tight">
+              <span
+                className={`font-heading font-bold text-lg transition-colors ${
+                  isScrolled ? "text-foreground" : "text-hero"
+                }`}
+              >
+                Dream Travels
+              </span>
+              <span
+                className={`text-[10px] font-medium transition-colors ${
+                  isScrolled ? "text-muted-foreground" : "text-hero-muted"
+                }`}
+              >
+                Live Your Dream
+              </span>
             </div>
-            <span
-              className={`font-heading font-bold text-xl transition-colors ${
-                isScrolled ? "text-foreground" : "text-hero"
-              }`}
-            >
-              Wanderlux
-            </span>
           </Link>
 
           {/* Desktop Nav */}
