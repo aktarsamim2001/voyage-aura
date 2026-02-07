@@ -4,10 +4,15 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 const Contact = () => {
   return (
     <Layout>
+      <SEO
+        title="Contact Us"
+        description="Get in touch with Dream Travels. Call, email, or WhatsApp us for tour bookings, inquiries & travel planning. We're available 24/7."
+      />
       <section className="pt-28 pb-12 bg-gradient-primary">
         <div className="container mx-auto px-4 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
