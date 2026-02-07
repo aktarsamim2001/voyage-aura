@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { tours, categories } from "@/data/tours";
 
 const Tours = () => {
@@ -32,6 +33,10 @@ const Tours = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Tour Packages"
+        description="Browse handcrafted domestic & international tour packages. Filter by budget, category & duration. Adventure, family, honeymoon & religious tours available."
+      />
       {/* Header */}
       <section className="pt-28 pb-12 bg-gradient-primary">
         <div className="container mx-auto px-4">

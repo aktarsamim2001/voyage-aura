@@ -1,12 +1,17 @@
 import { motion } from "framer-motion";
 import { Target, Eye, Award, Users } from "lucide-react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import FinalCTA from "@/components/home/FinalCTA";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const About = () => {
   return (
     <Layout>
+      <SEO
+        title="About Us"
+        description="Learn about Dream Travels — crafting extraordinary travel experiences since 2010. 500+ happy travelers, 50+ destinations, and counting."
+      />
       {/* Hero */}
       <section className="pt-28 pb-16 bg-gradient-primary">
         <div className="container mx-auto px-4 text-center">
