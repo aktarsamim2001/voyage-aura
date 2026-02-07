@@ -24,7 +24,7 @@ const FinalCTA = () => {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto"
         >
-          <h2 className="font-heading font-bold text-3xl md:text-5xl text-hero mb-4">
+          <h2 className="font-heading font-semibold text-3xl md:text-5xl text-hero mb-4 tracking-tight">
             Ready for Your Next Journey?
           </h2>
           <p className="text-hero-muted text-lg mb-8 leading-relaxed">

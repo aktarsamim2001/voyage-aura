@@ -12,10 +12,10 @@ const TourCategories = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <span className="text-accent font-heading font-semibold text-sm uppercase tracking-widest">
+          <span className="text-accent font-heading font-medium text-sm uppercase tracking-wider">
             Choose Your Journey
           </span>
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mt-2">
+          <h2 className="font-heading font-semibold text-3xl md:text-4xl text-foreground mt-2">
             Tour Categories
           </h2>
           <p className="text-muted-foreground mt-3 max-w-lg mx-auto">
@@ -46,7 +46,7 @@ const TourCategories = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5">
                   <span className="text-3xl mb-2 block">{cat.icon}</span>
-                  <h3 className="font-heading font-semibold text-lg text-primary-foreground">
+                  <h3 className="font-heading font-medium text-lg text-primary-foreground">
                     {cat.title}
                   </h3>
                   <p className="text-primary-foreground/70 text-sm mt-1">

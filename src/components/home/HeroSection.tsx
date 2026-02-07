@@ -35,7 +35,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-hero leading-tight mb-6"
+            className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-hero leading-[1.1] mb-6 tracking-tight"
           >
             Explore the World
             <br />
@@ -46,7 +46,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.6 }}
-            className="text-hero-muted text-lg md:text-xl max-w-xl mb-8 leading-relaxed"
+            className="text-hero-muted text-lg md:text-xl max-w-xl mb-8 leading-relaxed font-body"
           >
             Discover extraordinary destinations with curated tour packages designed
             for unforgettable journeys. Your dream vacation starts here.

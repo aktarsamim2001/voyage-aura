@@ -26,10 +26,10 @@ const TestimonialsSlider = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <span className="text-accent font-heading font-semibold text-sm uppercase tracking-widest">
+          <span className="text-accent font-heading font-medium text-sm uppercase tracking-wider">
             Testimonials
           </span>
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mt-2">
+          <h2 className="font-heading font-semibold text-3xl md:text-4xl text-foreground mt-2">
             What Our Travelers Say
           </h2>
         </motion.div>
